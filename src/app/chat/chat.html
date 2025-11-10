@@ -1,0 +1,8 @@
+<div class="chat">
+  <h3>Welcome, {{ userName }}</h3>
+
+  <div class="input-box">
+    <input [(ngModel)]="messageText" (keyup.enter)="sendChat()"  placeholder="Type a message..." />
+    <button (click)="sendChat()">Send</button>
+  </div>
+</div>
