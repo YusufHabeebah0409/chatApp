@@ -6,3 +6,11 @@
     <button (click)="sendChat()">Send</button>
   </div>
 </div>
+
+@for (item of messages; track $index) {
+  
+   <div class="message">
+        <strong>{{ item.username }}:</strong> {{ item.message }}
+        <span class="timestamp">{{ item.time }}</span>
+      </div>
+}
